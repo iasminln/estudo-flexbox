@@ -1,0 +1,197 @@
+/*** Reset ***/
+body,
+section,
+p,
+img,
+div,
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    color: rgb(41, 41, 41);
+    font-family: Helvetica, sans-serif;
+}
+
+/*** Informações iniciais ***/
+
+.info-inicial{
+    background-color: #050046;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px calc((100% - 1024px)/2);
+    flex-wrap: wrap;
+}
+
+.info-inicial p, .info-inicial a{
+    margin: 0 10px;
+}
+
+.info-inicial a{
+    color: white;
+}
+
+/*** Header ***/
+
+header{
+    background-color: #2a1fc0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px calc((100% - 1024px)/2);
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-size: 36px;
+    line-height: 2em;
+    margin: 0 10px;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navegacao a{
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*** Titulo do blog ***/
+
+.titulo-blog{
+    padding: 30px calc((100% - 1024px)/2);
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+/*** Container Sobre ***/
+
+.sobre{
+    display: flex;
+    padding: 5px calc((100% - 1024px)/2);
+    margin: 20px 10px;
+    flex-wrap: wrap;
+}
+
+.texto-sobre{
+    flex: 2 0 260px;
+    flex-wrap: wrap;
+}
+
+.titulo-sobre{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    line-height: 1.4;
+}
+
+.image1-sobre, .image2-sobre{
+    margin: 5px;
+    flex: 1 0 150px;
+    max-width: 400px;
+}
+
+.image1-sobre img, .image2-sobre img{
+    max-width: 100%;
+}
+
+/*** Produtos ***/
+
+.produtos{
+    padding: 5px calc((100% - 1024px)/2);
+    margin: 20px 0;
+}
+
+.titulo-produtos{
+    margin: 0 10px 20px 10px;
+}
+
+.lista-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+
+}
+
+.produto1, .produto2, .produto3{
+    max-width: 30%;
+    flex: 1 0 160px;
+}
+
+.produto1 img, .produto2 img, .produto3 img{
+    max-width: 100%;
+}
+
+.produto1 {
+    border-top: 4px solid #DC3B0F;
+}
+
+.produto2 {
+    border-top: 4px solid #5201A0;
+}
+
+.produto3 {
+    border-top: 4px solid #F09682;
+}
+
+.produto1 p, .produto2 p, .produto3 p{
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.produto1 h3, .produto2 h3, .produto3 h3{
+    line-height: 1.4;
+    color: rgb(24, 24, 24);
+    margin-top: 10px;
+    letter-spacing: 1.3px;
+}
+
+
+/*** Valores ***/
+
+.valores{
+    background-color: rgb(240, 240, 240);
+    padding: 5px calc((100% - 1024px)/2);
+}
+
+.titulo-valores{
+    margin: 0 10px;
+}
+
+.lista-valores{
+    display: flex;
+    margin: 0 10px;
+}
+
+.cobre, .prata, .ouro{
+    flex: 1 0 260px;
+    border: 2px solid rgb(24, 24, 24);
+    max-width: 30%;
+    padding: 20px;
+}

@@ -23,7 +23,7 @@ ul{
   box-sizing: border-box;
 }
 
-body{
+body {
     color: rgb(41, 41, 41);
     font-family: Helvetica, sans-serif;
 }
@@ -177,16 +177,19 @@ header h1{
 
 .valores{
     background-color: rgb(240, 240, 240);
-    padding: 5px calc((100% - 1024px)/2);
+    padding: 30px calc((100% - 1024px)/2);
 }
 
 .titulo-valores{
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
 }
 
 .lista-valores{
     display: flex;
     margin: 0 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .cobre, .prata, .ouro{
@@ -194,4 +197,72 @@ header h1{
     border: 2px solid rgb(24, 24, 24);
     max-width: 30%;
     padding: 20px;
+}
+
+.cobre h2{
+    font-size: 32px;
+    color: #B14F32;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.prata h2{
+    font-size: 32px;
+    color: #7D7D7D;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.ouro h2{
+    font-size: 32px;
+    color: #CEA227;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.lista-valores p{
+    border-bottom: 2px solid rgb(24, 24, 24);
+    border-top: 2px solid rgb(24, 24, 24);
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.lista-valores sup{
+    font-size: .5em;
+}
+
+.lista-valores li{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-valores li:first-child{
+    margin-top: 20px;
+}
+
+.lista-valores li::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #2a1fc0;
+}
+
+.lista-valores a{
+    color: rgb(24, 24, 24);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid rgb(24, 24, 24);
+    display: block;
+    margin: 20px auto 10px auto;
+    max-width: 200px;
+    text-align: center;
 }

@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /*** Reset ***/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul {
@@ -10,41 +12,51 @@ ul {
 }
 
 body {
-  color: rgb(41, 41, 41);
+  color: #292929;
   font-family: Helvetica, sans-serif;
 }
 
 /*** Informações iniciais ***/
-
 .info-inicial {
   background-color: #050046;
   color: white;
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px calc((100% - 1024px) / 2);
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.info-inicial p,
-.info-inicial a {
+.info-inicial p {
   margin: 0 10px;
 }
 
 .info-inicial a {
+  margin: 0 10px;
   color: white;
 }
 
 /*** Header ***/
-
 header {
   background-color: #2a1fc0;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px calc((100% - 1024px) / 2);
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header h1 {
@@ -54,8 +66,11 @@ header h1 {
 }
 
 .navegacao ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .navegacao a {
@@ -70,26 +85,35 @@ header h1 {
 }
 
 /*** Titulo do blog ***/
-
 .titulo-blog {
   padding: 30px calc((100% - 1024px) / 2);
-  color: rgb(24, 24, 24);
+  color: #181818;
   font-size: 30px;
   margin: 0 10px;
 }
 
 /*** Container Sobre ***/
-
 .sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 5px calc((100% - 1024px) / 2);
   margin: 20px 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sobre p {
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .texto-sobre {
-  flex: 2 0 260px;
-  flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 260px;
+          flex: 2 0 260px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 10px;
 }
 
@@ -98,15 +122,12 @@ header h1 {
   margin-bottom: 20px;
 }
 
-.sobre p {
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
 .image1-sobre,
 .image2-sobre {
   margin: 0 10px 10px 10px;
-  flex: 1 1 170px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 170px;
+          flex: 1 1 170px;
 }
 
 .image1-sobre img,
@@ -115,7 +136,6 @@ header h1 {
 }
 
 /*** Produtos ***/
-
 .produtos {
   padding: 5px calc((100% - 1024px) / 2);
   margin: 20px 0;
@@ -126,22 +146,45 @@ header h1 {
 }
 
 .lista-produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .produto1,
 .produto2,
 .produto3 {
   margin: 0 10px 20px 10px;
-  flex: 1 1 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
 }
 
 .produto1 img,
 .produto2 img,
 .produto3 img {
   max-width: 100%;
+}
+
+.produto1 p,
+.produto2 p,
+.produto3 p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.produto1 h3,
+.produto2 h3,
+.produto3 h3 {
+  line-height: 1.4;
+  color: #181818;
+  margin-top: 10px;
+  letter-spacing: 1.3px;
 }
 
 .produto1 {
@@ -156,26 +199,9 @@ header h1 {
   border-top: 4px solid #f09682;
 }
 
-.produto1 p,
-.produto2 p,
-.produto3 p {
-  line-height: 1.4;
-  margin: 10px 0;
-}
-
-.produto1 h3,
-.produto2 h3,
-.produto3 h3 {
-  line-height: 1.4;
-  color: rgb(24, 24, 24);
-  margin-top: 10px;
-  letter-spacing: 1.3px;
-}
-
 /*** Valores ***/
-
 .valores {
-  background-color: rgb(247, 247, 247);
+  background-color: #f7f7f7;
   padding: 30px calc((100% - 1024px) / 2);
 }
 
@@ -184,18 +210,80 @@ header h1 {
 }
 
 .lista-valores {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lista-valores p {
+  border-bottom: 2px solid #181818;
+  border-top: 2px solid #181818;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.lista-valores sup {
+  font-size: 0.5em;
+}
+
+.lista-valores li {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lista-valores li:first-child {
+  margin-top: 20px;
+}
+
+.lista-valores li::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2a1fc0;
+}
+
+.lista-valores a {
+  color: #181818;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid #181818;
+  display: block;
+  margin: 20px auto 10px auto;
+  max-width: 200px;
+  text-align: center;
 }
 
 .cobre,
 .prata,
 .ouro {
   margin: 0 10px 20px 10px;
-  flex: 1 1 260px;
-  border: 2px solid rgb(24, 24, 24);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 260px;
+          flex: 1 1 260px;
+  border: 2px solid #181818;
   padding: 20px;
 }
 
@@ -220,55 +308,7 @@ header h1 {
   text-align: center;
 }
 
-.lista-valores p {
-  border-bottom: 2px solid rgb(24, 24, 24);
-  border-top: 2px solid rgb(24, 24, 24);
-  padding: 10px 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 28px;
-}
-
-.lista-valores sup {
-  font-size: 0.5em;
-}
-
-.lista-valores li {
-  margin: 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lista-valores li:first-child {
-  margin-top: 20px;
-}
-
-.lista-valores li::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #2a1fc0;
-}
-
-.lista-valores a {
-  color: rgb(24, 24, 24);
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 30px;
-  border: 2px solid rgb(24, 24, 24);
-  display: block;
-  margin: 20px auto 10px auto;
-  max-width: 200px;
-  text-align: center;
-}
-
 /*** Vantagens ***/
-
 .vantagens {
   padding: 30px calc((100% - 1024px) / 2);
 }
@@ -278,19 +318,26 @@ header h1 {
 }
 
 .lista-vantagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .vantagem-item {
-  flex: 1 1 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
   margin: 10px 10px;
 }
 
 .vantagem-item h3 {
   line-height: 1.4;
-  color: rgb(24, 24, 24);
+  color: #181818;
   margin-top: 10px;
   letter-spacing: 1.3px;
   padding-left: 10px;
@@ -314,7 +361,6 @@ header h1 {
 }
 
 /*** Contato ***/
-
 .contato {
   background-color: #2a1fc0;
   padding: 30px calc((100% - 1024px) / 2);
@@ -326,23 +372,36 @@ header h1 {
 }
 
 .container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 10px;
 }
 
-.container-form p {
+.container-form P {
   color: white;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0 30px 20px 0;
   line-height: 1.4;
 }
 
 .form-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .form-contato button {
@@ -356,23 +415,36 @@ header h1 {
 }
 
 .form-contato button:hover {
-  background-color: rgb(5, 0, 70, 0.7);
+  background-color: #050046;
+  opacity: 0.7;
   cursor: pointer;
 }
 
 .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .label-name,
 .label-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   font-size: 12px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-bottom: 20px;
   max-width: 49%;
 }
@@ -384,6 +456,19 @@ header h1 {
   padding: 5px;
 }
 
+.label-mensagem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+
 .label-mensagem textarea {
   margin-top: 5px;
   min-height: 60px;
@@ -393,28 +478,26 @@ header h1 {
   padding: 5px;
 }
 
-.label-mensagem {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  color: white;
-  margin-bottom: 20px;
-}
-
 /*** Footer ***/
-
 .footer {
   background-color: #050046;
   padding: 30px calc((100% - 1024px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contatos-footer {
   margin: 0 10px;
   color: white;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   line-height: 1.4;
 }
 
@@ -424,7 +507,9 @@ header h1 {
 
 .direitos {
   color: white;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-size: 14px;
   margin: 20px 10px 0 10px;
 }
+/*# sourceMappingURL=style.css.map */

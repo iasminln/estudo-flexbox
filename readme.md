@@ -1,6 +1,8 @@
 # Estudo sobre FlexBox
 
-Essa página foi feita com intuito de estudar as possibilidades com FlexBox e a responsividade em diferentes displays.
+Essa página foi feita com intuito de estudar as possibilidades com FlexBox e a responsividade em diferentes displays. Página criada em março de 2022.
+
+Para acessar: https://iasminln.github.io/estudo-flexbox/
 
 <br/>
 
